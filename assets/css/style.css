@@ -1,0 +1,52 @@
+html {
+  background-color: white;
+}
+
+body {
+  font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+
+.card {
+    text-align: center;
+  background-color: lightgray;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  width: 300px;
+  overflow: hidden;
+}
+
+.imgNote{
+    justify-content: center;
+    width: 100%;
+}
+
+.inputs{
+    border-radius: 100px;
+}
+
+.btn{
+    background-color: lightsalmon;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    text-transform: lowercase;
+}
+
+.circulo{
+    border: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+input { 
+    text-align: center; 
+}
