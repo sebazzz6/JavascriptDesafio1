@@ -1,13 +1,12 @@
-const valor = "400000";
 var formulario = document.querySelector("form");
-
 formulario.addEventListener("submit", (e) =>{
     e.preventDefault();
-    let color = document.getElementById("color").value;
-    let cantidad = document.getElementById("cant").value;
-    let total = cantidad * valor;
-    let cadena = '<p>Total: $' + total + '</p>';
-    cadena += '<p>Cantidad: $' + cantidad + '</p>';
-    document.getElementById("total").innerHTML = cadena;
-    document.getElementById("imagenNotebook").src = 'assets/img/note'+color+'.png';
+    let color = document.querySelector("#color").value;
+    let valor = document.querySelector("#precio").value;
+    let cantidad = document.querySelector("#cant").value;
+    document.querySelector("#total").innerHTML = '$' + (cantidad * valor) + ' => Precio Ingresado: $' + valor;
+    document.querySelector("#cantidadSel").innerHTML = cantidad;
+    document.querySelector("#circulo").style.backgroundColor = color;
+    document.querySelector("#imagenNotebook").src = 'assets/img/note'+color+'.png';
 });
+
