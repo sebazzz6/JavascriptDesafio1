@@ -14,18 +14,18 @@
         <form action="">
             <label for="cantidad"></label><br/>
             <input id="cant" class="inputs" type="text" for="cantidad" placeholder="Cantidad de equipos"><br/><br/>
+            <input id="precio" class="inputs" type="text" for="precio" placeholder="Ingrese Precio"><br/><br/>
             <select id="color">
                 <option value="red">Rojo</option>
                 <option value="black" selected>Negro</option>
                 <option value="blue">Azul</option>
-            </select><br/>
-            <p>Precio: 400.000</p>
+            </select><br/><br/>
             <button class="btn" id="boton" type="submit">Calcular Total</button>
         </form>
     </div>    
-    <h1>Total Venta</h1>
-    <div id="total"></div>
-    <div id="circulo"></div>
+    <p>Total Venta:&nbsp;<div id="total">-</div></p>
+    <p>Cantidad Seleccionado:&nbsp;<div id="cantidadSel">-</div></p>
+    <p>Color Seleccionado:&nbsp;</p><div id="circulo"></div>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
