@@ -8,24 +8,27 @@
     <title>Desafio Javascript</title>
 </head>
 <body>
-    <div class="card">
-        <img id="imagenNotebook" src="assets/img/noteblack.png" alt="" class="imgNote">
-        <p>Laptop Gamer HP</p>
-        <form action="">
-            <label for="cantidad"></label><br/>
-            <input id="cant" class="inputs" type="text" for="cantidad" placeholder="Cantidad de equipos"><br/><br/>
-            <input id="precio" class="inputs" type="text" for="precio" placeholder="Ingrese Precio"><br/><br/>
-            <select id="color">
-                <option value="red">Rojo</option>
-                <option value="black" selected>Negro</option>
-                <option value="blue">Azul</option>
-            </select><br/><br/>
-            <button class="btn" id="boton" type="submit">Calcular Total</button>
-        </form>
-    </div>    
-    <p>Total Venta:&nbsp;<div id="total">-</div></p>
-    <p>Cantidad Seleccionado:&nbsp;<div id="cantidadSel">-</div></p>
-    <p>Color Seleccionado:&nbsp;</p><div id="circulo"></div>
+    <main>
+        <div class="card">
+            <img id="imageNotebook" src="assets/img/noteblack.png" alt="Imagen de Notebook cambia de color segun elección de color" class="imgNote">
+            <p>Laptop Gamer HP</p>
+            <form action="">
+                <input id="quantity" class="inputs" type="text" for="quantity" placeholder="Cantidad de equipos"><br/><br/>
+                <input id="price" class="inputs" type="text" for="price" placeholder="Ingrese Precio"><br/><br/>
+                <select id="colour">
+                    <option value="red">Rojo</option>
+                    <option value="black" selected>Negro</option>
+                    <option value="blue">Azul</option>
+                </select><br/><br/>
+                <button class="btn" id="boton" type="submit">Calcular Total</button>
+            </form>
+        </div>
+        <div class="windowTotal">
+            <p>Total Venta:&nbsp;<div id="total">-</div></p>
+            <p>Cantidad Seleccionado:&nbsp;<div id="quantitySelect">-</div></p>
+            <p>Color Seleccionado:&nbsp;</p><div id="circle"></div>
+        </div>    
+    </main>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
