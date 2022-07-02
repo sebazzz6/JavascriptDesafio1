@@ -14,6 +14,13 @@ body {
   -moz-font-feature-settings: "liga" on;
 }
 
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+}
+
 .card {
   text-align: center;
   background-color: lightgray;
@@ -21,6 +28,10 @@ body {
   box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
   width: 300px;
   overflow: hidden;
+}
+
+.windowTotal{
+  margin-left: 50px;
 }
 
 .imgNote{
@@ -39,7 +50,7 @@ body {
     padding: 0.5rem;
 }
 
-#circulo{
+#circle{
   height:100px;
   width:100px;
   background:white;
